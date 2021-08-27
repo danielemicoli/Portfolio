@@ -1,0 +1,564 @@
+
+/* @import url('//fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,900&display=swap'); */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+    .navbar{
+    background-color: rgb(35, 38, 44);
+    position: fixed;
+    box-shadow: 1px 1px 2px 2px rgb(34, 36, 42);
+    padding: 0;
+}
+nav .container-fluid .navbar-brand{
+    color: rgb(41, 123, 158);
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.navbar-nav a{
+    color: rgb(255, 255, 255) ;
+    text-decoration: none;
+    font-size: 1em;
+    justify-content: space-evenly;
+}
+nav .container-fluid .navbar-brand span{
+    color: rgb(255, 255, 138);
+}
+.navbar-nav a:hover {
+    color: rgb(255, 255, 135) !important;
+    transition: 1s;
+}
+
+.nav-icon i {
+    text-align: right;
+    font-size: 1.3em;
+    color: white;
+}
+.nav-icon i:hover{
+    color: rgb(255, 255, 135) !important;
+    transition: 0.6s;  
+}
+video {
+    position: absolute;
+    left: 00px;
+    bottom: 00px;
+    z-index: -2;
+    height: 130vh;
+    width: 100%;
+    /* min-height: 130vh; */
+    box-shadow: 5px 10px 12px 10px rgb(120, 120, 120);
+    /* margin-bottom: 5em; */
+}
+#presentation {
+    background-image: url(../assets/img/ruvim-noga-o0R4iqk1eRQ-unsplash.jpg);
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100%; 
+    height: 130vh; 
+    background-position: right; 
+    box-shadow: 5px 10px 12px 10px rgb(120, 120, 120); 
+    background-attachment: fixed;
+
+}
+.title-presentation{
+    padding-top: 5em;
+    margin-left: 3rem;
+    margin-right: 1.2rem;
+    font-size: 2rem;
+}
+.title-presentation span{
+    font-size: 1.5em;
+    padding-top: 0.2em;
+    color: rgb(0, 0, 0);
+    text-shadow: 1.5px 1px #7b5c5c;
+    color: white;
+
+}
+
+.title-presentation h1{
+    margin-bottom: 2rem;
+    font-size: 2.3em;
+    text-shadow: 2px 2px #b72525;
+    word-wrap: break-word;
+    color: white;
+    
+}
+
+.title-presentation h2 a:hover{
+    animation:mymove 2s linear infinite;
+    border-radius: 5px;
+    color: #1f1a1a;
+    transition: 0.4s;
+}
+.words{
+        display: inline;
+        text-indent: 10px; 
+}
+
+.words span{
+    font-size: 2rem;
+    background-color:rgb(255, 253, 132);
+    padding: 0.5em 0.7em 0.5em 0.7em; 
+    color: rgb(0, 0, 0);
+    margin-top: 7rem;
+    border-radius: 0.1em;
+    border: 1px solid black;
+    box-shadow: 5px 10px;
+    margin-top: 30px;
+    position: relative;
+	position: absolute;
+	opacity: 0;
+	overflow: hidden;
+	color: #191a1b;
+	-webkit-animation: AlternateText 6s linear infinite 0s;
+	-ms-animation: AlternateText 6s linear infinite 0s;
+	animation: AlternateText 6s linear infinite 0s;
+}
+.words span:nth-child(2) { 
+    -webkit-animation-delay: 2s; 
+	-ms-animation-delay: 2s; 
+	animation-delay: 2s; 
+	color: #191a1b;
+}
+.words span:nth-child(3) { 
+    -webkit-animation-delay: 4s; 
+	-ms-animation-delay: 4s; 
+	animation-delay: 4s; 
+	color: #222325;	
+}
+@-webkit-keyframes AlternateText {
+    0% { opacity: 0; }
+    2% { opacity: 0; -webkit-transform: translateY(-30px); }
+	5% { opacity: 1; -webkit-transform: translateY(0px);}
+    17% { opacity: 1; -webkit-transform: translateY(0px); }
+	20% { opacity: 0; -webkit-transform: translateY(30px); }
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@-ms-keyframes AlternateText {
+    0% { opacity: 0; }
+    2% { opacity: 0; -ms-transform: translateY(-30px); }
+	5% { opacity: 1; -ms-transform: translateY(0px);}
+    17% { opacity: 1; -ms-transform: translateY(0px); }
+	20% { opacity: 0; -ms-transform: translateY(30px); }
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@keyframes AlternateText {
+    0% { opacity: 0; }
+    2% { opacity: 0; -webkit-transform: translateY(-30px); transform: translateY(-30px); }
+	5% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px);}
+    17% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px); }
+	20% { opacity: 0; -webkit-transform: translateY(30px); transform: translateY(30px); }
+	33% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+
+@keyframes mymove {
+    from {background-color: rgb(255, 253, 132);}
+    to {background-color: rgb(58, 149, 152);}
+  }
+  .title-presentation h2 a:hover{
+    box-shadow: red;
+}
+
+#about h3{
+    
+    text-align: center;
+    padding: 0.5em 0.7em 0.5em 0.7em; 
+    color: rgb(0, 0, 0);
+    margin-top: 8em;
+    border-radius: 0.1em;
+    border: 1px solid black;
+    box-shadow: 5px 10px;
+    background-color: rgb(147, 240, 254);
+    position: relative;  /* 'fixed' will work also. */
+    max-width: 200px;    /* Your required width here. */
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#about{
+    padding: 1em;
+    /* background-color: rgb(239, 251, 239); */
+    margin-bottom: 100px;
+
+}
+#btn-cv a {
+    text-decoration: none;
+    color: white;
+}
+#about div {
+    flex: 0 1 33% ;
+    align-content: center;
+
+}
+.about-img {
+    height: 100vh;
+    
+}
+
+/* .about-img img {
+    text-align: center;
+    height: 50vh;
+    align-content: center;
+    margin-top: 10em;
+    transition: transform .7s ease-in-out;
+} */
+  img:hover {
+    transition: 0.9s;
+  transform: rotateY(180deg);
+  }
+.about-text {
+    font-size: 1.5em;
+
+}
+.about-text p{
+    text-align: center;
+    font-size: 1.1rem;
+    color: #5a5a5a;
+    line-height: 1.4;
+}
+.about-text p:first-of-type{
+    font-size: 1.5em;
+    font-weight: 600;
+    color: black;
+}
+.about-text h3{
+    margin-bottom: 2em;
+}
+
+
+/* GENERAL STYLES */
+.visuallyHidden {
+    position: absolute; 
+    overflow: hidden; 
+    clip: rect(0 0 0 0); 
+    height: 1px; width: 1px; 
+    margin: -1px; padding: 0; border: 0; 
+}.middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.card{
+    cursor: pointer;
+    width: 300px;
+    height: 400px;
+    margin-top: 7em;
+}
+.front,.back{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform .5s linear;
+}
+.front img{
+    height: 100%;
+
+}
+.front {
+    transform: perspective(600px) rotate(0deg);
+}
+
+.back{
+    background: #f1f1f1;
+    transform: perspective(600px) rotateY(180deg);
+    /* background-image: url(../assets/img/dbd0b14535e0fb421d90ead07f9b3810.jpg); */
+    background-repeat: no-repeat center;
+    background-size: cover; 
+    background-position: center;
+    max-width: 100%;
+    max-height: 100%;
+        height: 600px;
+        object-fit: contain
+
+}
+.about-img .card .back #btn-cv:hover{
+    color: yellow;
+}
+.back-content{
+    color: #2c3e50;
+    text-align: center;
+    width: 100%;
+
+}
+.card:hover > .front {
+    transform: perspective(600px) rotateY(-180deg)
+
+}
+.card:hover > .back {
+    transform: perspective(600px) rotateY(0deg)
+
+}
+
+#services h3 {
+
+        text-align: center;
+        padding: 0.5em 0.7em 0.5em 0.7em; 
+        color: rgb(0, 0, 0);
+        margin-top: 30px;
+        margin-bottom: 70px;
+        border-radius: 0.1em;
+        border: 1px solid black;
+        box-shadow: 5px 10px;
+        background-color: rgb(197, 254, 147);
+        position: relative;  /* 'fixed' will work also. */
+        max-width: 200px;    /* Your required width here. */
+        width: 100%;
+        left: 70%;
+        transform: translateX(-50%);
+        
+    }
+    .services-text{
+        margin-top: 400px;
+    }
+    #cards_landscape_wrap-2{
+        justify-content: space-between;
+        background: #F7F7F7;
+      }
+      #cards_landscape_wrap-2 .container .row{
+        padding-top: 80px; 
+        padding-bottom: 100px;
+        text-align: center;
+        justify-content: space-evenly;
+
+      }
+      
+      #cards_landscape_wrap-2 a{
+        text-decoration: none;
+        outline: none;
+      }
+      #cards_landscape_wrap-2 .card-flyer {
+        border-radius: 5px;
+      }
+      #cards_landscape_wrap-2 .card-flyer .image-box{
+        background: #ffffff;
+        overflow: hidden;
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+        border-radius: 5px;
+      }
+      #cards_landscape_wrap-2 .card-flyer .image-box img{
+        -webkit-transition:all .9s ease; 
+        -moz-transition:all .9s ease; 
+        -o-transition:all .9s ease;
+        -ms-transition:all .9s ease; 
+        width: 100%;
+        height: 200px;
+      }
+      #cards_landscape_wrap-2 .card-flyer:hover .image-box img{
+        opacity: 0.7;
+        -webkit-transform:scale(1.15);
+        -moz-transform:scale(1.15);
+        -ms-transform:scale(1.15);
+        -o-transform:scale(1.15);
+        transform:scale(1.15);
+      }
+      #cards_landscape_wrap-2 .card-flyer .text-box{
+        text-align: center;
+      }
+      #cards_landscape_wrap-2 .card-flyer .text-box .text-container{
+        padding: 30px 18px;
+      }
+      #cards_landscape_wrap-2 .card-flyer{
+        background: #FFFFFF;
+        margin-top: 50px;
+        -webkit-transition: all 0.2s ease-in;
+        -moz-transition: all 0.2s ease-in;
+        -ms-transition: all 0.2s ease-in;
+        -o-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+        box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
+      }
+      #cards_landscape_wrap-2 .card-flyer:hover{
+        background: #fff;
+        box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+        -webkit-transition: all 0.2s ease-in;
+        -moz-transition: all 0.2s ease-in;
+        -ms-transition: all 0.2s ease-in;
+        -o-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+        margin-top: 50px;
+      }
+      #cards_landscape_wrap-2 .card-flyer .text-box p{
+        margin-top: 10px;
+        margin-bottom: 0px;
+        padding-bottom: 0px; 
+        font-size: 14px;
+        letter-spacing: 1px;
+        color: #000000;
+      }
+      #cards_landscape_wrap-2 .card-flyer .text-box h6{
+        margin-top: 0px;
+        margin-bottom: 4px; 
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: 'Roboto Black', sans-serif;
+        letter-spacing: 1px;
+        color: #00acc1;
+      }
+      .card {
+        display: grid;
+        grid-template-columns: 300px;
+        grid-template-rows: 210px;
+        grid-template-areas: "image" "text";
+    
+        border-radius: 18px;
+        background:white;
+        box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    }
+    .card-image{
+        grid-area: image;
+    
+    }
+    .card-text{
+        grid-area: text;
+    }
+/* SKILLS SECTION */
+
+#skills h3{
+    
+    text-align: center;
+    padding: 0.5em 0.7em 0.5em 0.7em; 
+    color: rgb(0, 0, 0);
+    border-radius: 0.1em;
+    border: 1px solid black;
+    box-shadow: 5px 10px;
+    background-color: rgb(220, 181, 255);
+    position: relative;  /* 'fixed' will work also. */
+    max-width: 200px;    /* Your required width here. */
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#skills{
+justify-content: center;}
+.skills-text{
+    margin-top: 80px;
+    
+}
+.skills-container{
+    max-width: 80%;
+    margin-top: 80px;
+    justify-content: center;}
+
+  
+
+  @keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-webkit-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-moz-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-o-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  
+  .bar{
+    background-color: #EEE;
+    padding: 2px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    width: 60%;
+    color: #FFF;
+    font-weight: bold;
+    text-shadow: 2px 1px 1px rgba(0,0,0,0.5);
+    
+}
+  .bar::before{
+    content:  attr(data-skill);
+    background-color: #ffe289;
+    display: inline-block;
+    padding: 5px 0 5px 10px;
+    border-radius: inherit;
+    animation: load 2s 0s;
+    -webkit-animation: load 2s 0s;
+    -moz-animation: load 2s 0s;
+    -o-animation: load 2s 0s;
+  }
+  .bar.css.basic::before{
+    background-color: #9fdfff;
+
+  }
+  
+  .bar.javascript::before{
+    background-color: #f3b0ff;
+
+  }
+  .bar.angular.advanced::before{
+    background-color: #a8ff79;
+  }
+
+  
+  .bar.html::before{
+    width: calc(90% - 10px);
+  }
+  .bar.css::before{
+    width: calc(90% - 10px);
+  }
+  .bar.javascript::before{
+    width: calc(70% - 10px);
+  }
+  .bar.angular::before{
+    width: calc(80% - 10px);
+  }
+  .bar.expert::before{
+    width: calc(100% - 10px);
+  }
+  /* #contact{
+    background-image: url(../assets/img/ruvim-noga-o0R4iqk1eRQ-unsplash.jpg);
+    height: 50vh;
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-size: cover; 
+ 
+    height: 80vh; 
+    background-position: right; 
+    box-shadow: 5px 10px 12px 10px rgb(120, 120, 120); 
+} */
+  
+
+    
+@media screen and (min-width:720px) {
+
+#about{
+    /* margin-top: 10em; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#about div {
+    flex: 0 1 30% ;
+    align-content: center;
+
+}
+
+
+
+}
