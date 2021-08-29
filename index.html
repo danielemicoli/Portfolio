@@ -6,11 +6,17 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/style.css">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+   
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!-- CSS -->
+     <link rel="stylesheet" href="./css/style.css">
+         <!-- Bootstrap CSS -->
+
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <script src="./js/script.js"></script>
 <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet"> -->
   </head>
@@ -19,7 +25,7 @@
       <header>
         <nav class="navbar fixed-top navbar-expand-md navbar-dark bg">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">Portfo<span>lio</span></a>
+            <a class="navbar-brand" href="#">Daniele Mic<span>oli</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -29,8 +35,9 @@
                     <a class="nav-link" href="#about">About</a>
                     <a class="nav-link" href="#services">Services</a>
                     <a class="nav-link" href="#skills">Skills</a>
+                    <a class="nav-link" href="#contact-form">Contact</a>
+                  
 
-                    <a class="nav-link" href="#">Contacts</a>
 
                   </div>
                   
@@ -47,32 +54,35 @@
         </nav>
 </header>
         <!-- <video autoplay loop play-inline muted >
-          <source src="./assets/video/Pexels Videos 2324293.mp4">
+          <source src="./assets/video/Ink - 35506.mp4">
 
         </video> -->
         <div data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
           <!-- <h4 id="scrollspyHeading1">First heading</h4> -->
         </div>
 
-        <main class="home" id="home">
-            <section id="presentation">
-                <div class="title-presentation">
+        <main class="home reveal" id="home">
+      
+            <section id="presentation" class="section-container">
+             
+                <div class="title-presentation" id="effect">
                     <span>Ciao!</span>
                     <h1>I'm Daniele Micoli</h1>
                     <div class="container-box">
                     <div class="words">
                         <span>Web Developer</span>
                         <span>App Developer</span>
-                        <span>Your Web Superhero</span>
+                        <span>UX Designer</span>
                   </div>
                 </div>
 
 
                 </div>
-               
             </section>
           </main>
-            <section id="about">
+            <section class="section-container effect" id="about">
+              <div class="about-container" id="effect-about">
+              <!-- <div class="about-container"> -->
                 <div class="about-text">
                 <h3>about.</h3>
                 <p>I'm a Web Developer from Rome, Italy.</p>
@@ -80,15 +90,16 @@
                     <p>When I'm not coding, you'll find me playing music or travel around the world.</p>
                 </div>
              
-                  <div class="about-img"> 
+                  <div class="about-img" id="effect"> 
                     <!-- <div class="shape"> -->
                        <div class="card middle">
                          <div class="front">
                           <img src="./assets/img/Schermata 2021-06-20 alle 17.24.16.png" alt="">
                     <!-- </div> -->
                         </div>
-                        <div class="back"                                     <img src="https://cdn.pixabay.com/photo/2018/03/30/15/12/dog-3275593_960_720.jpg" alt="">
-                          <div class="back-content middle">
+                        <div class="back" > 
+                           <img src="../Portfolio/assets/img/03a514ddd2dd70055d29ea50661968c3.jpg" alt="">
+                             <div class="back-content middle">
                             <button id="btn-cv" type="button" class="btn btn-dark"><a href="./assets/file/Curriculum_DanieleMicoli.pdf">Download CV</a> </button>
                             
 
@@ -97,33 +108,19 @@
                         </div>
                       </div>
                     </div>
-        
+                  </div>
+                </div>
             </section>
 
 
 
-
-
-     
-
-        <!-- <div class="container">
-
-              <input type="checkbox" id="checkbox3" class="checkbox3 visuallyHidden">
-              <label for="checkbox3">
-                  <div class="hamburger hamburger3">
-                      <span class="bar bar1"></span>
-                      <span class="bar bar2"></span>
-                      <span class="bar bar3"></span>
-                      <span class="bar bar4"></span>
-                  </div>
-              </label> -->
-
+              <!-- SERVICES SECTION -->
               <!-- Topic Cards -->
-    <section id="services" >
+    <section id="services" class="section-container" id="effect-services">
     
     <div id="cards_landscape_wrap-2">
       
-      <div class="container">
+      <div class="container"  id="effect-services" >
         
           <div class="row">
             <div class="services-text">
@@ -138,7 +135,7 @@
                               </div>
                               <div class="text-container">
                                   <h6>Front End</h6>
-                                  <p>Lorem ipsum dolor sit amet.</p>
+                                  <!-- <p>Lorem ipsum dolor sit amet.</p> -->
                               </div>
                           </div>
                       </div>
@@ -153,7 +150,7 @@
                               </div>
                               <div class="text-container">                                    
                                   <h6>UX Design</h6>
-                                  <p>Lorem ipsum dolor sit amet.</p>
+                                  <!-- <p>Lorem ipsum dolor sit amet.</p> -->
                               </div>
                           </div>
                       </div>
@@ -168,8 +165,8 @@
                               </div>
 
                               <div class="text-container">
-                                  <h6>App Development</h6>
-                                 <p>Lorem ipsum dolor sit amet.</p>
+                                  <h6>App Develop</h6>
+                                 <!-- <p>Lorem ipsum dolor sit amet.</p> -->
                               </div>
                           </div>
                       </div>
@@ -183,19 +180,80 @@
 
         </section>
 
-        <section id="skills">
-          <div class="skills-text">
-            <h3>skills.</h3>
-          </div>
-          <div class="container">
-            
-            <div class="bar html" data-skill="HTML5"></div>
-            <div class="bar css basic" data-skill="CSS3"></div>
-            <div class="bar skill intermediate" data-skill="Javascript"></div>
-            <div class="bar angular advanced" data-skill="Angular"></div>
 
+<!-- SKILLS SECTION -->
+        <section id="skills" class="section-container">
+          <div class="skills-text">
+            <h3 id="effect">skills.</h3>
+          </div>
+          <div class="container" id="effect-skills">
+            <div class="container-skills">
+            
+              <div class="bar html" id="html" data-skill="HTML5">90%</div>
+              <div class="bar css basic" data-skill="CSS3">90%</div>
+              <div class="bar javascript intermediate" data-skill="Javascript">65%</div>
+              <div class="bar angular advanced" data-skill="Angular">70%</div>
+           </div>
           </div>
         </section>
+
+          <!-- CONTACT FORM -->
+
+     <section id="contact-form">
+          <div class="container" id="form-container">
+            <h2>It's now or never</h2>
+            <h1>Get in Touch!</h1>
+            
+            <form action=http://FormMail.aruba.it/cgi-bin/FormMail.pl method=post></form> action="" id="join-us">
+              <div class="fields">
+                <span>
+                 <input placeholder="Name" type="text" />
+              </span>
+              <br />
+               <span>
+                 <input placeholder="Email" type="password" />
+              </span>
+              <br />
+              <span id="message">
+                <input type="text" id="text-area" />
+             </span>
+              </div>
+              <div class="submit">
+                <input  class="submit" value="Submit" type="button" />
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <!-- FOOTER -->
+
+        <footer>
+          <div class="footer-dark"  >
+
+                <div class="container" id="footer-container">
+                    <div class="row">
+                        
+                            <h3>Daniele Micoli</h3>
+                            <ul>
+                                <li><a href="">Front End</a></li>
+                                <li><a href="">UX Design</a></li>
+                                <li><a href="">App Develop</a></li>
+ 
+                            </ul>
+                            <p><em>you can find me here:</em></p>
+                        </div>
+                        
+                        <div class="col item social">
+                          <a href="https://github.com/danielemicoli"><i class="fab fa-github"></i></a>
+                          <a href="https://www.linkedin.com/in/daniele-micoli-7751b9102/"><i class="fab fa-linkedin-in"></i></a>
+                          <a href="https://instagram.com/mrbrownst1"><i class="fab fa-instagram"></i></a>
+                         
+                        </div>
+                    </div>
+                    <p class="copyright">© 2021 copyright all right reserved</p>
+            </footer>
+        </div>
+        </footer>
         
 
 

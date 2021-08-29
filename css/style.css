@@ -1,15 +1,19 @@
 
-/* @import url('//fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,900&display=swap'); */
+@import url('//fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,900&display=swap');
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
 }
 
 body {
     font-size: 1.2rem;
     font-family: 'Montserrat', sans-serif;
 }
+
     .navbar{
     background-color: rgb(35, 38, 44);
     position: fixed;
@@ -55,6 +59,9 @@ video {
     /* min-height: 130vh; */
     box-shadow: 5px 10px 12px 10px rgb(120, 120, 120);
     /* margin-bottom: 5em; */
+}
+.section-container{
+  scroll-snap-type: y mandatory;
 }
 #presentation {
     background-image: url(../assets/img/ruvim-noga-o0R4iqk1eRQ-unsplash.jpg);
@@ -203,7 +210,9 @@ video {
 
 }
 .about-img {
+    width: 100%;
     height: 100vh;
+    transition: 0.9s;
     
 }
 
@@ -215,8 +224,10 @@ video {
     transition: transform .7s ease-in-out;
 } */
   img:hover {
-    transition: 0.9s;
-  transform: rotateY(180deg);
+
+  width: 100%;
+  height: 100vh;
+
   }
 .about-text {
     font-size: 1.5em;
@@ -276,14 +287,12 @@ video {
 .back{
     background: #f1f1f1;
     transform: perspective(600px) rotateY(180deg);
-    /* background-image: url(../assets/img/dbd0b14535e0fb421d90ead07f9b3810.jpg); */
     background-repeat: no-repeat center;
     background-size: cover; 
     background-position: center;
-    max-width: 100%;
-    max-height: 100%;
-        height: 600px;
-        object-fit: contain
+    width: 100%;
+height: 100%;
+    object-fit: contain
 
 }
 .about-img .card .back #btn-cv:hover{
@@ -292,7 +301,7 @@ video {
 .back-content{
     color: #2c3e50;
     text-align: center;
-    width: 100%;
+    /* width: 100%; */
 
 }
 .card:hover > .front {
@@ -303,22 +312,27 @@ video {
     transform: perspective(600px) rotateY(0deg)
 
 }
+/* #services{
+background: #F7F7F7;
+} */
+
 
 #services h3 {
 
         text-align: center;
         padding: 0.5em 0.7em 0.5em 0.7em; 
         color: rgb(0, 0, 0);
-        margin-top: 30px;
         margin-bottom: 70px;
         border-radius: 0.1em;
         border: 1px solid black;
         box-shadow: 5px 10px;
         background-color: rgb(197, 254, 147);
+        text-align: center;
+        padding: 0.5em 0.7em 0.5em 0.7em; 
         position: relative;  /* 'fixed' will work also. */
         max-width: 200px;    /* Your required width here. */
         width: 100%;
-        left: 70%;
+        left: 50%;
         transform: translateX(-50%);
         
     }
@@ -327,7 +341,7 @@ video {
     }
     #cards_landscape_wrap-2{
         justify-content: space-between;
-        background: #F7F7F7;
+        background: #ffffff;
       }
       #cards_landscape_wrap-2 .container .row{
         padding-top: 80px; 
@@ -415,7 +429,6 @@ video {
         grid-template-columns: 300px;
         grid-template-rows: 210px;
         grid-template-areas: "image" "text";
-    
         border-radius: 18px;
         background:white;
         box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
@@ -428,9 +441,12 @@ video {
         grid-area: text;
     }
 /* SKILLS SECTION */
+    #skills{
+    height: 100vh;
+    padding: 5em;
+    }
 
-#skills h3{
-    
+    #skills h3{
     text-align: center;
     padding: 0.5em 0.7em 0.5em 0.7em; 
     color: rgb(0, 0, 0);
@@ -444,18 +460,15 @@ video {
     left: 50%;
     transform: translateX(-50%);
 }
-#skills{
-justify-content: center;}
+
 .skills-text{
     margin-top: 80px;
+    margin-bottom: 5em;
+    margin-top: 4em;
+
     
 }
-.skills-container{
-    max-width: 80%;
-    margin-top: 80px;
-    justify-content: center;}
 
-  
 
   @keyframes load{
     from {
@@ -477,18 +490,29 @@ justify-content: center;}
       width: 0%
     }
   }
+  @keyframes html {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
   
   .bar{
-    background-color: #EEE;
-    padding: 2px;
+    background-color: rgb(248, 248, 248);
+    padding: 3px;
     border-radius: 15px;
     margin-bottom: 10px;
     font-size: 14px;
     width: 60%;
     color: #FFF;
     font-weight: bold;
-    text-shadow: 2px 1px 1px rgba(0,0,0,0.5);
-    
+    /* text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); */
+    text-shadow: 0 0 2px rgb(18, 18, 18);
+
+    border:0.9px solid #989898;
 }
   .bar::before{
     content:  attr(data-skill);
@@ -530,6 +554,218 @@ justify-content: center;}
   .bar.expert::before{
     width: calc(100% - 10px);
   }
+  #contact-form{
+    background-image: url(../assets/img/ruvim-noga-o0R4iqk1eRQ-unsplash.jpg);
+    height: 120vh;
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100%; 
+    background-position: right; 
+    box-shadow: 5px 10px 12px 10px rgb(120, 120, 120); 
+    background-attachment: fixed;
+
+  }
+  .container{
+    margin-top: 2em;
+  }
+  .container h1, .container span{
+    font-family:"Pt Sans", helvetica, sans-serif;
+  }
+  
+  .container h1{
+    color:#fff;
+    font-weight:100;
+    font-size:3em; 
+    margin-bottom:10px;
+    margin-top: 1em;
+  }
+  
+  .container h2{
+    font-family:"droid serif";
+    font-style:italic;
+    color:#d3b6ca; 
+    font-size:1.3em;
+
+  }
+  
+  /* .container form span:before {
+    counter-increment:section;
+    content:counter(section);
+    border:2px solid #4c2639;
+    width:40px;
+    height:40px;
+    color:#fff;
+    display:inline-block;
+    border-radius:50%;
+    line-height:1.6em;
+    font-size:1.5em;
+    position:relative;
+    left:-22px;
+    top:-11px;
+    background:#2F1E27;
+  } */
+  
+  form{
+    margin-top:25px;
+    display:inline-block;
+  }
+  
+  /* .fields{
+    border-left:2px solid #4c2639
+  } */
+  
+  .container span{
+      margin-bottom:22px; 
+      display:inline-block;
+  }
+  
+  .container span:last-child{
+     margin-bottom:-11px;
+  }
+  
+  input{
+    border:none;
+    outline:none;
+    display:inline-block;
+    height:34px;
+    vertical-align:middle;
+    position:relative;
+    bottom:14px;
+    right:9px;
+    border-radius:22px;
+    width:30em;
+    max-width: 300px;
+    box-sizing:border-box;
+    padding:0 18px; 
+  }
+  
+  input[type="button"]{ 
+    background:rgba(197,62,126,.33) ! important;
+    color:#fff;
+    position:relative;
+    left:9px;
+    top:25px; 
+    width:100px;
+    cursor:pointer;
+  }
+  #text-area{
+    height: 300px;
+  }
+  #form-container{
+    text-align: center;
+  }
+  .submit{
+    margin-bottom: 2em;
+  }
+ .submit input:hover{
+    color: #a8ff79;
+    background:rgba(11, 24, 97, 0.33) ! important;
+    border: 1px solid white;
+
+  }
+  .footer-dark {
+    padding:50px 0;
+    color:#f0f9ff;
+    background-color:#282d32;
+    box-shadow: 10px 15px 15px 10px rgb(192, 100, 100); 
+
+  }
+  
+  .footer-dark h3 {
+    margin-top:0;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:16px;
+  }
+  
+  .footer-dark ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+  }
+  
+  .footer-dark ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.6;
+  }
+  
+  .footer-dark ul a:hover {
+    opacity:0.8;
+  }
+  
+  @media (max-width:767px) {
+    .footer-dark .item:not(.social) {
+      text-align:center;
+      padding-bottom:20px;
+    }
+  }
+  
+  .footer-dark .item.text {
+    margin-bottom:36px;
+  }
+  
+  @media (max-width:767px) {
+    .footer-dark .item.text {
+      margin-bottom:0;
+    }
+  }
+  
+  .footer-dark .item.text p {
+    opacity:0.6;
+    margin-bottom:0;
+  }
+  
+  .footer-dark .item.social {
+    text-align:center;
+  }
+  
+  @media (max-width:991px) {
+    .footer-dark .item.social {
+      text-align:center;
+      margin-top:20px;
+    }
+  }
+  
+  .footer-dark .item.social > a {
+    font-size:20px;
+    width:36px;
+    height:36px;
+    line-height:36px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+    margin:0 8px;
+    color:#fff;
+    opacity:0.75;
+  }
+  
+  .footer-dark .item.social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-dark .copyright {
+    text-align:center;
+    padding-top:24px;
+    opacity:0.3;
+    font-size:13px;
+    margin-bottom:0;
+  }
+  #footer-container .row{
+    text-align: center;
+    margin-bottom: 0.5em;
+  }
+  #footer-container .row p{
+    font-size: 0.6rem;
+    margin-top: 2em;
+  }
+
+
+  
   /* #contact{
     background-image: url(../assets/img/ruvim-noga-o0R4iqk1eRQ-unsplash.jpg);
     height: 50vh;
@@ -546,19 +782,18 @@ justify-content: center;}
     
 @media screen and (min-width:720px) {
 
-#about{
-    /* margin-top: 10em; */
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+.about-container{
+      /* margin-top: 10em; */
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+  }
+  .about-container div {
+      flex: 0 1 30% ;
+      align-content: center;
+
+  }
+ 
 }
-#about div {
-    flex: 0 1 30% ;
-    align-content: center;
 
-}
-
-
-
-}
