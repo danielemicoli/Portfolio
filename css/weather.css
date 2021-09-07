@@ -10,7 +10,25 @@ body{
 }
 h1{
     text-align: center;
-    margin-top: 1.6em;
+    margin-top: 3em;
+}
+.navbar-nav a{
+    color: rgb(255, 255, 255) !important;
+    text-shadow: 1px 1px black;}
+
+nav .container-fluid .navbar-brand{
+    color: rgb(255, 255, 255) !important;
+    text-shadow: 1px 1px black;
+  
+      font-size: 1.6rem;
+      font-weight: 600;   
+  }
+.nav-icon i {
+    text-align: right;
+    font-size: 1.3em;
+    color: rgb(255, 255, 255) !important;
+    text-shadow: 1px 1px black;    font-weight: 700;
+    
 }
 
 #icon img{
@@ -56,6 +74,7 @@ nav .navbar-nav li{
     margin-bottom: 0.5em;
     font-weight: 600;
 }
+
 
 .current-info{
     display: flex;

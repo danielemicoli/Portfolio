@@ -51,7 +51,7 @@ nav .container-fluid .navbar-brand:hover{
     text-decoration: none;
     font-size: 1em;
     justify-content: space-evenly;
-    color: rgb(232, 232, 232)!important;
+    /* color: rgb(232, 232, 232)!important; */
     font-weight: 600;
 
 }
@@ -70,9 +70,7 @@ nav .container-fluid .navbar-brand:hover{
     color: rgb(255, 255, 255);
     font-weight: 700;
 }
-.navbar-nav .nav-link{
-  color: rgb(255, 255, 255);
-}
+
 .nav-icon i:hover{
     color: rgb(255, 255, 135) !important;
     transition: 0.6s;  
