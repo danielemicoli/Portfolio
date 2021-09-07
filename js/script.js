@@ -37,7 +37,7 @@ window.onload = function(){
     window.addEventListener('scroll', scrollEffectServices);
 
     function scrollEffectServices(){
-        if(window.scrollY>=1000){
+        if(window.scrollY>=1300){
             effectServices.style.opacity = '1';
             effectServices.style.transform = 'translateX(0)';
             effectServices.style.transition = '1.4s ease-in-out';
@@ -53,7 +53,7 @@ window.onload = function(){
     window.addEventListener('scroll', scrollEffectSkills);
 
     function scrollEffectSkills(){
-        if(window.scrollY>=1900){
+        if(window.scrollY>=2000){
             effectSkills.style.opacity = '1';
             effectSkills.style.transform = 'translateY(0)';
             effectSkills.style.transition = '1.4s ease-in-out';

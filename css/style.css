@@ -29,15 +29,15 @@ body {
     position: fixed;
     /* box-shadow: 1px 1px 2px 2px rgb(34, 36, 42); */
     padding: 0;
-    
 }
+
 nav .container-fluid .navbar-brand{
   color: rgb(255, 255, 255);
 
     font-size: 1.6rem;
-    font-weight: 600;
-    
+    font-weight: 600;   
 }
+
 nav .container-fluid .navbar-brand:hover{
   color: rgb(255, 255, 135) !important;
   transition: 1.2s;
@@ -48,20 +48,16 @@ nav .navbar-nav li a{
   color: rgb(232, 232, 232)!important;
   }
 
-
-
 .navbar-nav a{
     text-decoration: none;
     font-size: 1em;
     justify-content: space-evenly;
     color: rgb(232, 232, 232)!important;
     font-weight: 600;
-    
 
 }
-nav .container-fluid .navbar-brand span{
-  color: rgb(232, 232, 232);
-}
+
+
 .navbar-nav a:hover {
     color: rgb(255, 255, 135) !important;
     transition: 1s;
