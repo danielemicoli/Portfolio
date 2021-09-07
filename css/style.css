@@ -9,6 +9,9 @@ html{
   scroll-behavior: smooth;
 
 }
+.dropdown-menu li .dropdown-item{
+  color: #000000;
+}
 
 body {
     font-size: 1.2rem;
@@ -42,10 +45,6 @@ nav .container-fluid .navbar-brand:hover{
   color: rgb(255, 255, 135) !important;
   transition: 1.2s;
     border-bottom: 2px solid red;
-  }
-
-nav .navbar-nav li a{
-  color: rgb(232, 232, 232)!important;
   }
 
 .navbar-nav a{
