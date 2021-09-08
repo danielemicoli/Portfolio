@@ -8,6 +8,8 @@ body{
     font-family: 'Poppins', sans-serif;
     background-image: url('../assets/img/bg.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+
     /* background-position: center; */
 }
 h1{
