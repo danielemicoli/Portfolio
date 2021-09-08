@@ -55,6 +55,8 @@ nav .container-fluid .navbar-brand{
 
 .widget{
     text-align: center;
+    opacity:0.9
+
     /* max-width: 300px; */
 }
 /* #myVideo {
