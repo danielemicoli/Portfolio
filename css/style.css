@@ -9,9 +9,7 @@ html{
   scroll-behavior: smooth;
 
 }
-.dropdown-menu li .dropdown-item{
-  color: #000000;
-}
+
 
 body {
     font-size: 1.2rem;
@@ -51,11 +49,13 @@ nav .container-fluid .navbar-brand:hover{
     text-decoration: none;
     font-size: 1em;
     justify-content: space-evenly;
-    color: rgb(255, 255, 255) !important;
     font-weight: 600;
 
 }
-.dropdown-menu .dropdown-item{
+.dropdown-menu li .dropdown-item{
+  color: black!important;
+}
+.dropdown-item a{
   color: black!important;
 }
 

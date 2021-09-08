@@ -48,28 +48,44 @@ function getForecast(){
    
      console.log(objFor)
 
-    new Date(data.list[i].dt * 1000).getDay()
+    // new Date(data.list[i].dt * 1000).getDay()
 
         
-     document.getElementById('dayone').innerHTML = objFor.list[9].dt_txt + Math.floor(objFor.list[9].main.temp -273.15)  + ' '+ '°C' + ' ' + objFor.list[9].weather[0].icon + ' '+objFor.list[25].weather[0].icon + ' ' + objFor.list[33].dt_txt;
-     document.getElementById('icon-dayone').innerHTML = objFor.list[0].weather[1].icon;
-    document.getElementById('date-dayone').innerHTML = objFor.list[8].dt_txt(toLocalDateString(undefined, options))
+
+    let days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+    let dateOne = new Date(objFor.list[8].dt_txt);
+    // dt_txtOne = dateOne.toDateString(days);
+    var dayNameOne = days[dateOne.getDay()]
+    // console.log(dayNameOne)
+ 
+    document.getElementById('date-dayone').innerHTML = dayNameOne 
      document.getElementById('icon-dayone').src = 'http://openweathermap.org/img/wn/'+objFor.list[8].weather[0].icon+'@2x.png';
-     document.getElementById('temp-one').innerHTML = Math.floor(objFor.list[8].main.temp -273.15) + ' '+ '°C' ;
+     document.getElementById('temp-one').innerHTML = Math.floor(objFor.list[8].main.temp-273.15) + ' '+ '°C' ;
 
-     document.getElementById('date-daytwo').innerHTML = objFor.list[17].dt_txt
-     document.getElementById('icon-daytwo').src = 'http://openweathermap.org/img/wn/'+objFor.list[17].weather[0].icon+'@2x.png';
-     document.getElementById('temp-two').innerHTML = Math.floor(objFor.list[17].main.temp -273.15) + ' '+ '°C' ;
+     let dateTwo = new Date(objFor.list[16].dt_txt);
+     dt_txtTwo = dateTwo.toDateString(objFor.list[16].dt_txt);
+     var dayNameTwo = days[dateTwo.getDay()]
 
-     document.getElementById('date-daythree').innerHTML = objFor.list[25].dt_txt
-     document.getElementById('icon-daythree').src = 'http://openweathermap.org/img/wn/'+objFor.list[25].weather[0].icon+'@2x.png';
-     document.getElementById('temp-three').innerHTML = Math.floor(objFor.list[25].main.temp -273.15) + ' '+ '°C' ;
+     document.getElementById('date-daytwo').innerHTML = dayNameTwo
+     document.getElementById('icon-daytwo').src = 'http://openweathermap.org/img/wn/'+objFor.list[16].weather[0].icon+'@2x.png';
+     document.getElementById('temp-two').innerHTML = Math.floor(objFor.list[16].main.temp -273.15) + ' '+ '°C' ;
 
-     document.getElementById('date-dayfour').innerHTML = objFor.list[33].dt_txt
-     document.getElementById('icon-dayfour').src = 'http://openweathermap.org/img/wn/'+objFor.list[33].weather[0].icon+'@2x.png';
-     document.getElementById('temp-four').innerHTML = Math.floor(objFor.list[33].main.temp -273.15) + ' '+ '°C' ;
+     let dateThree = new Date(objFor.list[24].dt_txt);
+     dt_txtThree = dateThree.toDateString(objFor.list[24].dt_txt);
+     var dayNameThree = days[dateThree.getDay()]
 
+     document.getElementById('date-daythree').innerHTML = dayNameThree
+     document.getElementById('icon-daythree').src = 'http://openweathermap.org/img/wn/'+objFor.list[24].weather[0].icon+'@2x.png';
+     document.getElementById('temp-three').innerHTML = Math.floor(objFor.list[24].main.temp -273.15) + ' '+ '°C' ;
+     
+     let dateFour = new Date(objFor.list[32].dt_txt);
+     dt_txtFour = dateFour.toDateString(objFor.list[32].dt_txt);
+     var dayNameFour = days[dateFour.getDay()]
 
+     document.getElementById('date-dayfour').innerHTML = dayNameFour
+     document.getElementById('icon-dayfour').src = 'http://openweathermap.org/img/wn/'+objFor.list[32].weather[0].icon+'@2x.png';
+     document.getElementById('temp-four').innerHTML = Math.floor(objFor.list[32].main.temp -273.15) + ' '+ '°C' ;
+    
 }
 
 )}
