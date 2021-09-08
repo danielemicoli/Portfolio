@@ -31,6 +31,10 @@ body {
     /* box-shadow: 1px 1px 2px 2px rgb(34, 36, 42); */
     padding: 0;
 }
+.nav-link{
+  color: white!important;
+
+}
 
 nav .container-fluid .navbar-brand{
   color: rgb(255, 255, 255);
@@ -55,9 +59,7 @@ nav .container-fluid .navbar-brand:hover{
 .dropdown-menu li .dropdown-item{
   color: black!important;
 }
-.dropdown-item a{
-  color: black!important;
-}
+
 
 .navbar-nav a:hover {
     color: rgb(255, 255, 135) !important;
@@ -72,8 +74,6 @@ nav .container-fluid .navbar-brand:hover{
     color: rgb(255, 255, 255);
     font-weight: 700;
 }
-.navbar-nav .nav-link{
-color: blue;}
 
 .nav-icon i:hover{
     color: rgb(255, 255, 135) !important;
