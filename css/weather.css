@@ -9,14 +9,14 @@ body{
     background-image: url('../assets/img/bg.jpg');
     background-size: cover;
     height: 110vh;
-
-
+    background-repeat: no-repeat;
 
     /* background-position: center; */
 }
 h1{
     text-align: center;
     margin-top: 3em;
+    color: white;
 }
 .navbar-nav a{
     color: rgb(255, 255, 255) !important;
@@ -46,6 +46,9 @@ nav .container-fluid .navbar-brand{
     color: rgb(255, 255, 255) !important;
     text-shadow: 1px 1px black;    font-weight: 700;
     
+}
+.date{
+    color: rgb(112, 112, 112);
 }
 
 #icon img{
